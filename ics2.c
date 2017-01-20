@@ -20,7 +20,7 @@ void main()
 	printf("\nKeyword text length = %d",strlen(kwtext));
 	for(i=0;i<strlen(plain);i++)
 	{
-		*(cipher+i)=*(kwtext+i)^*(plain+i);
+		cipher[i]=kwtext[i]^plain[i];
 	}
 	printf("\nCipher text : %s",cipher);
 	printf("\nCipher text length = %d",strlen(cipher));
